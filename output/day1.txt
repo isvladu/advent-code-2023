@@ -1,1 +1,2 @@
-<__main__.Solution object at 0x7f2fcb057fd0>
+Part 1: 53974
+Part 2: 52840
