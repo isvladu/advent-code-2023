@@ -1,3 +1,5 @@
+from utils.solution_base import SolutionBase
+
 digit_map = {
     "one": "1",
     "two": "2",
@@ -11,12 +13,7 @@ digit_map = {
 }
 
 
-class Solution:
-    def read_input(self):
-        with open("input/day1_1.txt", "r") as f:
-            self.input = f.read().splitlines()
-        f.close()
-
+class Solution(SolutionBase):
     @staticmethod
     def is_substr_numeric(str: str):
         return str in digit_map.keys()
@@ -70,7 +67,7 @@ class Solution:
 
         return new_line
 
-    def solve(self):
+    def solve_part1(self):
         sum_cv = 0
         for line in self.input:
             sum_cv += self.find_calibration_value(line)
@@ -87,9 +84,9 @@ class Solution:
 
 if __name__ == "__main__":
     solution = Solution()
-    solution.read_input()
+    solution.read_input(1, "1")
 
-    sum_cv_1 = solution.solve()
+    sum_cv_1 = solution.solve_part1()
     sum_cv_2 = solution.solve_part2()
 
     with open("output/day1.txt", "w") as f:

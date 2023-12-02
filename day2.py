@@ -1,15 +1,12 @@
 import re
+from utils.solution_base import SolutionBase
 
 
-class Solution:
+class Solution(SolutionBase):
     games = {}
 
-    def read_input(self):
-        with open("input/day2_1.txt", "r") as f:
-            input = f.read().splitlines()
-        f.close()
-
-        for game in input:
+    def parse_input(self):
+        for game in self.input:
             game = re.sub(r" ", "", game)
             game_no, sets = game.split(":")
             game_id = int(re.sub(r"[^0-9]", "", game_no))
@@ -70,7 +67,8 @@ class Solution:
 
 if __name__ == "__main__":
     solution = Solution()
-    solution.read_input()
+    solution.read_input(2, "1")
+    solution.parse_input()
 
     part1 = solution.solve_part1()
     part2 = solution.solve_part2()
