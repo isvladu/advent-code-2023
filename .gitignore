@@ -1,6 +1,4 @@
 .vscode
 .venv
 output
-tests/__pycache__
-utils/__pycache__
-solutions/__pycache__
+*/__pycache__

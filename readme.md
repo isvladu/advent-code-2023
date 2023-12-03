@@ -4,7 +4,7 @@
 This repository contains my solutions (in python) to the problems from [Advent Code 2023](https://adventofcode.com/2023).
 
 ## Usage
-```bash
+```
 usage: Advent of Code 2023 Solver [-h] [-d day_number] [--skip-tests]
 
 Runs a specific day from the set of AoC2023 problems
