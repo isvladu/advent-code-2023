@@ -66,8 +66,8 @@ class Solution(SolutionBase):
 
 
 if __name__ == "__main__":
-    solution = Solution()
-    solution.read_input(2, "1")
+    solution = Solution(2)
+    solution.read_input()
     solution.parse_input()
 
     part1 = solution.solve_part1()

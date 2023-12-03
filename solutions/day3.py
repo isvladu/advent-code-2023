@@ -1,6 +1,10 @@
 from utils.solution_base import SolutionBase
 
+
 class Solution(SolutionBase):
+    def parse_input(self):
+        pass
+    
     def solve_part1(self):
         pass
 
@@ -9,8 +13,8 @@ class Solution(SolutionBase):
 
 
 if __name__ == "__main__":
-    solution = Solution()
-    solution.read_input(3, "train")
+    solution = Solution(3)
+    solution.read_input()
 
     part1 = solution.solve_part1()
     part2 = solution.solve_part2()

@@ -3,11 +3,19 @@
 ## Summary
 This repository contains my solutions (in python) to the problems from [Advent Code 2023](https://adventofcode.com/2023).
 
-## Running the solutions
-To run any of the solutions you can follow the format below by replacing ***X*** with the respective day (e.g. 1, 8, 15, etc).
-
+## Usage
 ```bash
-python3 dayX.py
+usage: Advent of Code 2023 Solver [-h] [-d day_number] [--skip-tests]
+
+Runs a specific day from the set of AoC2023 problems
+
+options:
+  -h, --help            show this help message and exit
+  -d day_number, --day day_number
+                        Optional, day number of AoC, if not present runs last available day
+  --skip-tests          Optional, skipping tests
+
+isvladu
 ```
 
 ## Day overview
