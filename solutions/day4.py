@@ -13,10 +13,10 @@ class Card:
 
 class Solution(SolutionBase):
     card_list: List[Card]
-    
+
     def parse_input(self):
         self.card_list = []
-        
+
         for line in self.input:
             card = line.split(":")
             card_id = int(card[0][4:])
@@ -31,24 +31,41 @@ class Solution(SolutionBase):
 
     def solve_part1(self):
         res = 0
-        
+
         for card in self.card_list:
             points = 0
-            
+
             for number in card.my_numbers:
                 if number in card.winning_numbers:
                     if points == 0:
                         points = 1
                     else:
                         points = points * 2
-                        
-            print(f"Card:{card.id} - Points:{points}")
+
             res += points
-            
+
         return res
 
     def solve_part2(self):
-        return 0
+        res = 0
+
+        card_dict = {i: 1 for i in range(1, len(self.card_list) + 1)}
+
+        for card in self.card_list:
+            res += card_dict[card.id]
+            
+            winning_no = 0
+
+            for number in card.my_numbers:
+                if number in card.winning_numbers:
+                    winning_no += 1
+                    
+            for i in range(1, winning_no + 1):
+                card_dict[card.id + i] += card_dict[card.id]
+                
+            card_dict[card.id] -= 1
+
+        return res
 
 
 if __name__ == "__main__":

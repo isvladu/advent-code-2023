@@ -8,4 +8,4 @@ class TestDay4(unittest.TestCase):
         
     def test_part2(self):
         solution = Solution(4, "test", 2)
-        self.assertEqual(solution.solve_part2(), 0, "Part 2 is wrong.")
+        self.assertEqual(solution.solve_part2(), 30, "Part 2 is wrong.")
