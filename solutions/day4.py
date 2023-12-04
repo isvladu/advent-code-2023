@@ -63,8 +63,6 @@ class Solution(SolutionBase):
             for i in range(1, winning_no + 1):
                 card_dict[card.id + i] += card_dict[card.id]
                 
-            card_dict[card.id] -= 1
-
         return res
 
 
