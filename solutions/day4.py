@@ -12,9 +12,11 @@ class Card:
 
 
 class Solution(SolutionBase):
-    card_list: List[Card] = list()
+    card_list: List[Card]
     
     def parse_input(self):
+        self.card_list = []
+        
         for line in self.input:
             card = line.split(":")
             card_id = int(card[0][4:])
@@ -46,7 +48,7 @@ class Solution(SolutionBase):
         return res
 
     def solve_part2(self):
-        pass
+        return 0
 
 
 if __name__ == "__main__":
