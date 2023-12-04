@@ -5,15 +5,9 @@ import unittest
 
 
 class Runner:
-    def __init__(self, day: str | None = None, skip_tests: bool = False):
-        if day:
-            self.day = day
-        else:
-            self.day = self.get_last_day()
-        if skip_tests:
-            self.run_tests = False
-        else:
-            self.run_tests = True
+    def __init__(self, day: int | None = None, skip_tests: bool = False):
+        self.day = day or self.get_last_day()
+        self.run_tests = not skip_tests
 
     def get_last_day(self) -> int:
         last_day = 0
