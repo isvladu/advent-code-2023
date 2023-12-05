@@ -5,7 +5,7 @@ from utils.solution_base import SolutionBase
 
 
 class Card:
-    def __init__(self, id: int, winning_numbers: List[int], my_numbers: List[int]):
+    def __init__(self, id: int, winning_numbers: List[int], my_numbers: List[int]) -> None:
         self.id = id
         self.winning_numbers = winning_numbers
         self.my_numbers = my_numbers
