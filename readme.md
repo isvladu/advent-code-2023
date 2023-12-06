@@ -25,8 +25,8 @@ isvladu
 |  02 | Cube Conundrum | ⭐⭐ |
 |  03 | Gear Ratios | ⭐⭐ |
 |  04 | Scratchcards| ⭐⭐ |
-|  05 | |
-|  06 | |
+|  05 | If You Give A Seed A Fertilizer | ⭐⭐ |
+|  06 | Wait For It | ⭐⭐ |
 |  07 | |
 |  08 | |
 |  09 | |
