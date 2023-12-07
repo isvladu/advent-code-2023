@@ -27,7 +27,7 @@ isvladu
 |  04 | Scratchcards| ⭐⭐ |
 |  05 | If You Give A Seed A Fertilizer | ⭐⭐ |
 |  06 | Wait For It | ⭐⭐ |
-|  07 | |
+|  07 | Camel Cards | ⭐⭐ |
 |  08 | |
 |  09 | |
 |  10 | |
